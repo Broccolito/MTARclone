@@ -22,7 +22,7 @@ Wdavies <- function(qx, lambda, delta=NULL, lim=1e9, acc=1e-6){
   out = .C("qfc", as.double(lambda), as.double(delta),  as.integer(h),
            as.integer(m), as.double(sigma), as.double(qx), as.integer(lim),
            as.double(acc), trace = as.double(rep(0, 7)), ifault = as.integer(0),
-           res = as.double(0), PACKAGE = "MTAR")
+           res = as.double(0), PACKAGE = "MTARclone")
   out$res = 1 - out$res
   return(list(Qq=out$res, trace=out$trace, ifault=out$ifault))
   
@@ -34,7 +34,7 @@ NULL
 #> NULL
 
 .onUnload <- function (libpath) {
-  library.dynam.unload("MTAR", libpath)
+  library.dynam.unload("MTARclone", libpath)
 }
 
 
