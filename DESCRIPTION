@@ -1,0 +1,13 @@
+Package: MTARclone
+Title: Various Multi-Trait Association tests in R
+Version: 0.1.0
+Imports: VGAM, mvtnorm, MASS
+Description: This is a clone library for MTAR, an R package implementing various methods for genome-wide association test of multiple traits.
+Depends:
+    R (>= 3.0.0)
+License: GPL (>= 2)
+LazyData: true
+Encoding: UTF-8
+Author: Baolin Wu [aut, cre]
+Maintainer: Wanjun Gu <wagu@health.ucsd.edu>
+RoxygenNote: 6.1.0
