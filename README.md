@@ -1,17 +1,17 @@
 # MTARclone
-What is MTAR:
+### What is MTAR:
 
   - an R package implementing methods for genome-wide association test of multiple traits
 
-How to install the original MTAR library:
+### How to install the original MTAR library:
 
   - installation within R: devtools::install_github("baolinwu/MTAR")
 
-Why a clone of the original package is needed:
+### Why a clone of the original package is needed:
 
 - There is another package in CRAN named MTAR (https://cran.r-project.org/web/packages/MTAR/index.html) and when updating all R packages, the MTAR package created by Dr. Baolin Wu will be automatically expunged and changed to the package deposited on CRAN.
 
-Credits:
+### Credits:
 
 - All credits for creating and developing the MTAR package should be due to Dr. Baolin Wu. Thi is just a clone of the original repository maintained by Wanjun Gu (wagu@health.ucsd.edu).
 
